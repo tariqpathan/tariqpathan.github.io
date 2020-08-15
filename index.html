@@ -14,30 +14,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
     <script src="assets/js/stylish-portfolio.js"></script>
+    <script src="assets/js/flack.js"></script>
     
+    <script src="assets/js/BeerSlider.unmin.js"></script>
+    <script> var slider = new BeerSlider(document.getElementById('image-slider-container')); </script>
+    <link rel="stylesheet" href="assets/css/BeerSlider.css">
     <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles2.css">
 </head>
 
 <body id="page-top">
-<!--
-    <nav class="navbar navbar-light navbar-expand-md fixed-top bg-secondary navigation-clean">
-        <div class="container"><a class="navbar-brand" href="#">Tariq Pathan</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse"
-                id="navcol-1">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">About</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Experience</a></li>
-                    <li class="nav-item dropdown show"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="true" href="#">Projects</a>
-                        <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">Books</a><a class="dropdown-item" role="presentation" href="#">Flack</a><a class="dropdown-item" role="presentation" href="#">CS50-Finance</a><a class="dropdown-item" role="presentation"
-                                href="#">Upgraded-Finance</a></div>
-                    </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Social</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
--->
     <nav class="navbar navbar-light navbar-expand-md navbar fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#">Tariq Pathan</a>
@@ -45,9 +32,9 @@
                 value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link active js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#languages">Experience</a></li>
-                    <li class="nav-item nav-link dropdown js-scroll-trigger" role="presentation"><a class="dropdown-toggle js-scroll-trigger nav-link" data-toggle="dropdown" aria-expanded="true" href="#projects">Projects</a>
+                    <li class="nav-item nav-link dropdown js-scroll-trigger" role="presentation"><a class="dropdown-toggle js-scroll-trigger nav-link" data-toggle="dropdown" aria-expanded="true" href="#portfolio">Projects</a>
                         <div class="dropdown-menu" role="menu">
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">Books</a>
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">Flack</a>
@@ -197,6 +184,437 @@
             </div>
         </div>
     </section>
+    <section id="project-books" class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>Books</h2>
+                    <p class="lead mb-5"><span><br>A book rating site using Flask and the Goodreads API. Users can store reviews and ratings in a SQL database.<br></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Features</h4>
+                    <ul>
+                        <li>Dynamically generated URL routes for over 5000 books</li>
+                        <li>Alternative routes for logged in users that allows ratings and reviews to be stored and retrieved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Search</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/img/books1.png"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>Users can search by book title, author, year of publication from a single input form</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Results</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/img/books3.png"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>Search query returns upto 20 of the best matches</span>
+                        <br>
+                        <span>Results shown for the search term '1954' - some of the results have different years because 1954 is also in the ISBN for these books. 
+                            This was deliberately chosen to allow users to search by incomplete ISBN values.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3>Dynamic Routes</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"><img src="assets/img/books2.png"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>An example of a dynamically generated page for each book with previous comments or ratings displayed if the user has saved them on a previous visit.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col"><button class="btn btn-primary" type="button" onclick="location.href='https\:\/\/tariqs-book-reviews.herokuapp.com'">Go to the Books App!</button>
+                    <p><span>The app may take some time as the server initializes</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="project-flack" class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>Flack</h1>
+                    <p class="lead mb-5"><span><br>Instant messaging web app that allows users to send and receive messages without refreshing the page.<br></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h3>Features</h3>
+                    <ul>
+                        <li>Create channels with independent messages</li>
+                        <li>Persistent display names without login</li>
+                        <li>Upto 100 stored messages per channel</li>
+                        <li>Messages can be deleted within a grace period</li>
+                    </ul>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <h3>Design Considerations</h3>
+                    <ul>
+                        <li>Data structure used to store messages</li>
+                        <li>Notifying users when a message was deleted</li>
+                        <li>User constraints</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Implementing this project </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>I split the project into several parts:</span></p>
+                    <ul class="animate">
+                        <li>Getting and storing the users display name</li>
+                        <li>Managing AJAX requests</li>
+                        <li>Creating and retrieving a list of channels</li>
+                        <li>Remembering a users channel</li>
+                        <li>Retrieving and storing messages</li>
+                        <li>Adding websockets</li>
+                        <li>Styling messages</li>
+                        <li>Implementing delete functionality</li>
+                        <li>Mobile friendly design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Instant Messaging & Channels </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col d-xl-flex justify-content-xl-center align-items-xl-end">
+                    <figure class="figure"><img class="figure-img d-xl-flex justify-content-xl-center" src="assets/img/flack%20channel2.gif" style="width: 100%;">
+                        <figcaption class="figure-caption">Channel creation and message separation/retrieval</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Message Deletion </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/flack%20delete%20example%20final.gif" style="width: 100%;">
+                        <figcaption class="figure-caption">Instant message update as well deleting messages</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Message Delete Timer </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/Flack%20delete%20timer2.gif" style="width: 100%;">
+                        <figcaption class="figure-caption">I used Promises in Javascript to implement this</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary" type="button"onclick="location.href='https\:\/\/flack-messaging-app.herokuapp.com'">Go to the Flack App!</button>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col">
+                    <p><span>The app may take some time to load as the server initializes</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-cs50" class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>CS50 Finance</h1>
+                    <p class="lead mb-5"><span>Web app where users can buy, sell and retrieve stock prices from an online stock exchange</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Features</h2>
+                    <ul>
+                        <li>Users can register and login</li>
+                        <li>Data stored in a SQL database</li>
+                        <li>Server-side validation on transactions</li>
+                        <li>Users can view a history of all their previous transactions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">    
+            <div class="row">
+                <div class="col">
+                    <h3> Quoting Stocks </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/Screenshot_2020-08-12%20C$50%20Finance%20Quote.png">
+                        <img class="figure-img" src="assets/img/Screenshot_2020-08-12%20C$50%20Finance%20Quoted.png">
+                        <figcaption class="figure-caption">Users provide stock symbol and are returned with the cost of a share</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-primary" type="button" onclick="location.href='https\:\/\/tariqs-sharebuyer.herokuapp.com/login'">Go to the CS50 Finance App!</button>
+                </div>
+            </div>
+            <div class="row">    
+                <div class="col">
+                    <p><span>The app may take some time to load as the server initializes</span></p>
+                    <p><span>Create your own account or use:</span></p> 
+                    <p><span>Username: <b>testuser</b></span><br>
+                    <span>Password: <b>testuser</b></span></p>
+                    <p><span>For an improved version of this app, have a look here</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="project-upgradedfinance" class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h1>Upgraded Finance</h1>
+                    <p class="lead mb-5"><span><br>Like CS50 Finance, with a more user friendly design.<br></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Rationale for project</h2>
+                    <p><span>From a users standpoint the original app  was frustrating to use, especially with errors. <br>
+                        I started with typeahead functionality and later added more UI/UX improvements.</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <h3> Index Page & Typeahead </h3>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col">
+                    <div id="image-slider-container" class="beer-slider">
+                        <img src="assets/img/old-index2.png">
+                        <div class="beer-reveal">    
+                            <img src="assets/img/new-index2.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>Comparison of the old index page vs the new index page</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/new-typeahead1.1.gif">
+                        <figcaption class="figure-caption">Searching for stocks is easier thanks to typeahead.<br>
+                            Buying shares or cancelling transactions is now possible.<br>
+                            In the previous app, the user would have had to type the correct symbol and the right
+                            number of shares.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Register & Login Logic </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="image">
+                        <img class="figure-img large-screen" src="assets/img/finance%20logic.png">
+                        <img class="figure-img small-screen" src="assets/img/finance%20logic%20small1.png">
+                        <img class="figure-img small-screen" src="assets/img/finance%20logic%20small2.png">
+                        <p class="figure-caption">Comparison of login/register logic</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/old%20%20register%20error2.gif">
+                        <figcaption class="figure-caption">Old version of finance: errors redirect to an error page which the user must navigate away from</figcaption>
+                        <div class="col">
+                            <figure class="figure"><img class="figure-img" src="assets/img/new%20login.gif">
+                                <figcaption class="figure-caption">New version: users are given real-time feedback, there is no need to navigate back</figcaption>
+                            </figure>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Buying & Selling Improvements </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img class="figure-img" src="assets/img/oldfinance_buy.gif">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img class="figure-img" src="assets/img/oldfinance_sell.gif">
+                        <figcaption class="figure-caption">Old method of buying and selling shares - calculations and checks all done on server side</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/new-eventhandling_and_calcs.gif">
+                        <figcaption class="figure-caption">Calculations done client-side with the user receiving immediate feedback - value of shares are updated and cash balance is changed. <br>When there isn't enough cash available, the maximum amount of shares are calculated and
+                            shown. <br>In addition, the buy button is disabled if there is not enough cash available.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/new-buying.gif">
+                        <figcaption class="figure-caption">Transactions are not confirmed until the user decides to confirm them with the button.<br>This required an overhaul of the calculation logic and was a challenging task.<br>Confirming the transaction data doesn't require a page
+                            reload as it did before.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/new-eventhandling_inputs2.gif">
+                        <figcaption class="figure-caption">Using event handlers to constrain what the user could do was another UI change.<br>If the user decides to buy, the sell input is disabled and vice versa.</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="content-section bg-light">
+            <div class="container-fluid text-center">    <div class="row">
+                <div class="col">
+                    <h3> Backend & Other Improvements </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure"><img class="figure-img" src="assets/img/new-typeahead2.2.gif">
+                        <figcaption class="figure-caption">Other changes included avoiding duplicate entries, managing AJAX responses where an API call failed.</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p><span>Other improvements include:</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <ul class="highlight">
+                        <li>Modularising server functions - separating database, API calls and server logic</li>
+                        <li>Using SQLalchemy ORM vs raw SQL strings</li>
+                        <li>Retrieving a list of all stocks from the API every few days</li>
+                        <li>Storing stock data client-side allowing price and share updates</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <button id="upgraded-finance" class="btn btn-primary" type="button" onclick="location.href='https\:\/\/upgraded-finance.herokuapp.com/login'">Go to the Upgraded Finance App!</button>
+                    <p><span>The app may take some time to load as the server initializes</span></p>
+                    <p><span>Create your own account or use:</span></p> 
+                    <p><span>Username: <b>testuser</b></span><br>
+                    <span>Password: <b>testuser</b></span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer id="contact" class="footer text-center">
         <div class="container-fluid">
             <ul class="list-inline mb-5">
