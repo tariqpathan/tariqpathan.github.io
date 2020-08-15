@@ -1,0 +1,12 @@
+/* section#experience > div > div.row > div.col > img {
+    width: 100%;
+    max-width: max-content;
+} */
+
+img {
+    width: 100%;
+}
+
+.navbar-shrink {
+    background-color: #f3b900;
+}
