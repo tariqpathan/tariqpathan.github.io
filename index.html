@@ -9,17 +9,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/css/BeerSlider.css">
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/BeerSlider.unmin.js"></script>
+
     <script src="assets/js/stylish-portfolio.js"></script>
     <script src="assets/js/flack.js"></script>
     
-    <script src="assets/js/BeerSlider.unmin.js"></script>
-    <script> var slider = new BeerSlider(document.getElementById('image-slider-container')); </script>
-    <link rel="stylesheet" href="assets/css/BeerSlider.css">
-    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/styles2.css">
 </head>
@@ -32,17 +32,23 @@
                 value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#languages">Experience</a></li>
-                    <li class="nav-item nav-link dropdown js-scroll-trigger" role="presentation"><a class="dropdown-toggle js-scroll-trigger nav-link" data-toggle="dropdown" aria-expanded="true" href="#portfolio">Projects</a>
+                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#languages">Experience</a></li>
+                    <li class="nav-item nav-link dropdown">
+                        <a class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" role="menu">
-                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">Books</a>
-                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">Flack</a>
-                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">CS50-Finance</a>
-                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#">Upgraded-Finance</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#portfolio">Projects Overview</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-books">Books</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-books-app">Books App</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-flack">Flack</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-flack-app">Flack App</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-cs50finance">CS50-Finance</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-cs50finance-app">CS50-Finance App</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-upgradedfinance">Upgraded-Finance</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-upgradedfinance-appaaaa">Upgraded-Finance App</a>
                         </div>
                     </li>
-                    <li class="nav-item nav-link js-scroll-trigger" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact & CV</a></li>
+                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact & CV</a></li>
                 </ul>
             </div>
         </div>
@@ -62,14 +68,12 @@
                     <p class="lead mb-5"><span>Down £2000, anxious, and with nothing left to lose I enrolled on a computer science course (CS50 from HarvardX). Working on the second problem set, I remember feeling alive and energised as I tried to solve an equation for printing a series of hash symbols in C.</span>
                         <span>I hadn’t felt this feeling of satisfaction and accomplishment for a long time and it was in stark<br>contrast to how I felt about my job.</span></p>
                     <p class="lead pb-5"><span>Since then, over the past one and a half years I have been learning different aspects of software development, implementing them in projects whilst working as a teacher/tutor.</span>
-                        <span>Throughout this process, I have been dealing with self-doubt and frustration but also perseverance, reward, and joy.</span></p>
+                        <span>Throughout this process, I have been dealing with self-doubt and frustration but this has been outweighed by the reward and joy from persevering through.</span></p>
                     <p class="lead mb-5"><span>Going through this process, as challenging as it was, has evolved me, and I am confident in my abilities to learn, adapt and use my skills to benefit others, in ways that are empowering and exciting for me.</span>
                         <span>I am sure this makes me a strong, positive contributor to any team that I am on.</span></p>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-primary text-white">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -77,8 +81,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="about-1" class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -101,40 +103,40 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/iconfinder_postgresql_4691328.png"></div>
+                <div class="col"><img class="logo" src="assets/img/iconfinder_postgresql_4691328.png"><p><span>Postgresql</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/sql.png"></div>
+                <div class="col"><img class="logo" src="assets/img/sql.png"><p><span>SQL</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/sass.png"></div>
+                <div class="col"><img class="logo" src="assets/img/sass.png"><p><span>Sass</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/c-2975-logo-png-transparent.png"></div>
+                <div class="col"><img class="logo" src="assets/img/c-2975-logo-png-transparent.png"><p><span>C</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/bootstrap.png"></div>
+                <div class="col"><img class="logo" src="assets/img/bootstrap.png"><p><span>Bootstrap</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/python.png"></div>
+                <div class="col"><img class="logo" src="assets/img/python.png"><p><span>Python</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/css-logo-png-css-logo-black-and-white.png"></div>
+                <div class="col"><img class="logo" src="assets/img/css-logo-png-css-logo-black-and-white.png"><p><span>CSS</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/flask-logo.png"></div>
+                <div class="col"><img class="logo" src="assets/img/flask-logo.png"><p><span>Flask</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/html.png"></div>
+                <div class="col"><img class="logo" src="assets/img/html.png"><p><span>HTML</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/iconfinder_Git_4923052.png"></div>
+                <div class="col"><img class="logo" src="assets/img/iconfinder_Git_4923052.png"><p><span>Git</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/iconfinder_JQuery_logo_282806.png"></div>
+                <div class="col"><img class="logo" src="assets/img/iconfinder_JQuery_logo_282806.png"><p><span>jQuery</span></p></div>
             </div>
             <div class="row">
-                <div class="col"><img src="assets/img/javascript.png"></div>
+                <div class="col"><img class="logo" src="assets/img/javascript.png"><p><span>JavaScript</span></p></div>
             </div>
         </div>
     </section>
@@ -184,7 +186,7 @@
             </div>
         </div>
     </section>
-    <section id="project-books" class="content-section bg-light">
+    <section id="project-books" class="project content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -202,8 +204,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -219,8 +219,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -239,8 +237,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -257,7 +253,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <section id="project-books-app" class="project app bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col"><button class="btn btn-primary" type="button" onclick="location.href='https\:\/\/tariqs-book-reviews.herokuapp.com'">Go to the Books App!</button>
@@ -266,8 +262,7 @@
             </div>
         </div>
     </section>
-    
-    <section id="project-flack" class="content-section bg-light">
+    <section id="project-flack" class="project content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -298,8 +293,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -323,8 +316,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -332,15 +323,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col d-xl-flex justify-content-xl-center align-items-xl-end">
+                <div class="col">
                     <figure class="figure"><img class="figure-img d-xl-flex justify-content-xl-center" src="assets/img/flack%20channel2.gif" style="width: 100%;">
                         <figcaption class="figure-caption">Channel creation and message separation/retrieval</figcaption>
                     </figure>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -355,8 +344,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -372,7 +359,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <section id="project-flack-app" class="project app bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -386,8 +373,7 @@
             </div>
         </div>
     </section>
-
-    <section id="project-cs50" class="content-section bg-light">
+    <section id="project-cs50finance" class="project content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -407,8 +393,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">    
             <div class="row">
                 <div class="col">
@@ -425,7 +409,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <section id="project-cs50finance-app" class="project app bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -443,8 +427,7 @@
             </div>
         </div>
     </section>
-
-    <section id="project-upgradedfinance" class="content-section bg-light">
+    <section id="project-upgradedfinance" class="project content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -460,8 +443,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
                 <div class="row">
                     <div class="col">
@@ -494,8 +475,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -505,9 +484,9 @@
             <div class="row">
                 <div class="col">
                     <div class="image">
-                        <img class="figure-img large-screen" src="assets/img/finance%20logic.png">
-                        <img class="figure-img small-screen" src="assets/img/finance%20logic%20small1.png">
-                        <img class="figure-img small-screen" src="assets/img/finance%20logic%20small2.png">
+                        <img class="figure-img large-screen register" src="assets/img/finance%20logic.png">
+                        <img class="figure-img small-screen register" src="assets/img/finance%20logic%20small1.png">
+                        <img class="figure-img small-screen register" src="assets/img/finance%20logic%20small2.png">
                         <p class="figure-caption">Comparison of login/register logic</p>
                     </div>
                 </div>
@@ -525,8 +504,6 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -570,12 +547,9 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section class="content-section bg-light">
-            <div class="container-fluid text-center">    <div class="row">
-                <div class="col">
-                    <h3> Backend & Other Improvements </h3>
-                </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col"><h3> Backend & Other Improvements </h3></div>
             </div>
             <div class="row">
                 <div class="col">
@@ -601,7 +575,7 @@
             </div>
         </div>
     </section>
-    <section class="bg-light">
+    <section id="project-upgradedfinance-app" class="project app bg-light">
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
@@ -622,7 +596,6 @@
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-github"></i></a></li>
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-envelope-letter"></i></a></li>
             </ul>
-            <p class="text-muted mb-0 small">Copyright &nbsp;© Portfolio site 2 2020</p>
         </div>
         <a class="js-scroll-trigger scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
     </footer>

@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     listAnimationOnScroll();
+    var slider = new BeerSlider(document.getElementById('image-slider-container'));
 });
 
 function listAnimationOnScroll () {
