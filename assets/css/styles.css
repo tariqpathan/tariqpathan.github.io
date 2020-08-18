@@ -33,7 +33,7 @@ img {
     max-width: 85vw;
     max-width: max-content;
     
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 0 20px gray;
 }
 
 img.register {
@@ -43,6 +43,8 @@ img.register {
 img.logo {
     max-width: 120px;
 }
+
+
 
 figure {
     /* padding-bottom: 50px; */
@@ -68,8 +70,31 @@ div.container-fluid {
     /* padding: 0 2px; */
 }
 
+/* margins for headings */
+
+h1 {
+    margin: 3.5rem 0 4rem 0;
+}
+
+h2 {
+    margin: 2.5rem 0 3rem 0;
+}
+
+h3 {
+    margin: 2rem 0 2.5rem 0;
+}
+
 h4 {
+    margin: 1.6rem 0 2rem 0;
     /* padding-bottom: 20px; */
+}
+
+p {
+    margin: 1rem 0 1.25rem 0;
+}
+
+p.image-caption {
+    margin: 40px 0 100px 0;
 }
 
 ul {
@@ -91,4 +116,8 @@ ul.highlight > li:hover {
     0% {}
     50% { background-color: #1341aa; color: white;}
     100% {}
+}
+
+li.list-group-item {
+    border: none;
 }
