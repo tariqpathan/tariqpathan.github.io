@@ -1,108 +1,99 @@
-.navbar-shrink {
-    background-color: #f3b900;
+#mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    border: 1px solid #fff;
 }
 
-a.nav-link.active {
+#mainNav {
+    background-color: #ecb807;
+}
+
+a.nav-link.active.js-scroll-trigger {
     background-color: #1d809f;
+    color: #fff !important;
 }
-
-@media (max-width: 767px) {
-    img.small-screen {
-        display: inline;
-    }
-    img.large-screen {
-        display: none;
-    }
-    ul.highlight > li {
-        background: #1341aa;
-        color: #fff;
-    }
-}
-
-@media (min-width: 768px) {
-    img.small-screen {
-        display: none;
-    }
-    img.large-screen {
-        display: inline;
-    }
-}
-
-img {
-    width: 100%;
-    max-width: 85vw;
-    max-width: max-content;
-    
-    box-shadow: 0 0 20px gray;
-}
-
+/* images */
 img.register {
     border-radius: 80px;
 }
 
 img.logo {
-    max-width: 120px;
+    width: 120px;
 }
 
-
-
-figure {
-    /* padding-bottom: 50px; */
+img.tariq-image {
+    border-radius: 50%;
+    width: 200px;
+    margin: 3rem 0;
 }
 
-section {
-    /* padding: 150px 0; */
+img, div.image-container-index-page {
+    box-shadow: 0 0 20px gray;
+    display: inline-block;
 }
 
-section:first-of-type, section:last-of-type {
-    /* padding: 0 0 30px 0; */
-}
-
-section.content-section > div:first-child > div:first-child {
-    /* background-color: rgb(27, 33, 124);
+/* section and div spacing */
+section.content-section > div.section-start {
+    background-color: rgb(27, 33, 124);
     color: white;
-    padding: 20px 0;
-    margin: 20px 0;
-    border-radius: 5px; */
+    border-radius: 5px;
+    padding-bottom: 3rem;
 }
 
-div.container-fluid {
-    /* padding: 0 2px; */
+div.container-fluid:not(header > div.container-fluid) {
+    padding: 4rem 0;
 }
 
-/* margins for headings */
+section.content-section {
+    padding: 0 0 18rem 0;
+}
 
+div.project.app {
+    margin: 1.5rem 0;
+    /* padding-top: 1.5rem; */
+}
+
+button.app-link {
+    margin: 1.5rem 0;
+}
+
+/* margins for text */
 h1 {
-    margin: 3.5rem 0 4rem 0;
+    margin: 4rem 0 3.5rem 0;
 }
 
 h2 {
-    margin: 2.5rem 0 3rem 0;
+    margin: 3rem 0 2.5rem;
+}
+
+h2.no-padding {
+    margin: 0 0 0.5rem 0;
 }
 
 h3 {
-    margin: 2rem 0 2.5rem 0;
+    margin: 2.5rem 0 2rem 0;
 }
 
 h4 {
-    margin: 1.6rem 0 2rem 0;
-    /* padding-bottom: 20px; */
+    margin: 2rem 0 1.5rem 0;
 }
 
-p {
-    margin: 1rem 0 1.25rem 0;
+p:not(p.mb-0) {
+    margin: 1.25rem 0 1rem 0;
 }
 
 p.image-caption {
-    margin: 40px 0 100px 0;
+    margin: 40px auto 100px auto;
+    padding: 0 .5rem;
+    max-width: 80vw;
 }
-
+/* list item styles */
 ul {
     list-style-type: none;
     padding-left: 0;
 }
 
-ul:not(nav) > li:not(.nav-item) {
+ul > li:not(li.nav-item) {
     margin: 1rem 0;
     transition-property: all;
     transition-duration: 500ms;
@@ -120,4 +111,64 @@ ul.highlight > li:hover {
 
 li.list-group-item {
     border: none;
+}
+
+/* media queries */
+
+/* bootstrap xs and small screens */
+@media (max-width: 767px) {
+    img.small-screen {
+        display: inline-block;
+    }
+    img.large-screen {
+        display: none;
+    }
+    ul.highlight > li {
+        background: #1341aa;
+        color: #fff;
+    }
+    img, div.image-container-index-page {
+        max-width: 98%;
+    }
+    
+    p.lead {
+        padding: 0 1rem;
+    }
+    div.text-block > p.lead {
+        text-align: left;
+    }
+}
+
+/* bootstrap medium+ screens  */
+@media (min-width: 768px) {
+    img.small-screen {
+        display: none;
+    }
+    img.large-screen {
+        display: inline-block;
+    }
+    p.lead {
+        padding: 0 3rem;
+    }
+    img.tariq-image {
+        width: 30%;
+    }
+    img, div.image-container-index-page {
+        max-width: 95%;
+    }
+}
+
+@media (min-width: 992px) {
+    #mainNav {
+        transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s ease-in-out;
+        background: transparent;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #mainNav.navbar-shrink {
+        background: #f3b900;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
 }

@@ -25,17 +25,17 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-light navbar-expand-md navbar fixed-top" id="mainNav">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">Tariq Pathan</a>
             <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
                 value="Menu"><i class="fa fa-bars"></i></button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item nav-link dropdown">
-                        <a class="dropdown-toggle nav-link js-scroll-trigger" data-toggle="dropdown" aria-expanded="false">Projects</a>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link js-scroll-trigger" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Projects</a>
                         <div class="dropdown-menu" role="menu">
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#portfolio">Projects Overview</a>
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-books">Books</a>
@@ -45,10 +45,10 @@
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-cs50finance">CS50-Finance</a>
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-cs50finance-app">CS50-Finance App</a>
                             <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-upgradedfinance">Upgraded-Finance</a>
-                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-upgradedfinance-appaaaa">Upgraded-Finance App</a>
+                            <a class="dropdown-item js-scroll-trigger" role="presentation" href="#project-upgradedfinance-app">Upgraded-Finance App</a>
                         </div>
                     </li>
-                    <li class="nav-item nav-link" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact & CV</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="#contact">Contact & CV</a></li>
                 </ul>
             </div>
         </div>
@@ -59,8 +59,8 @@
             <h3 class="mb-5"><em>Self-taught Software Engineer</em></h3>
         </div>
     </header>
-    <section id="about" class="content-section bg-light">
-        <div class="container-fluid text-center">
+    <section id="about" class="content-section bg-light no-top-padding">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
                     <h1>About Me</h1>
@@ -77,13 +77,13 @@
             <div class="row">
                 <div class="col">
                     <h2>Why Software Engineering?</h2>
-                    <div class="text-block px-5 text-justify">
-                        <p class="lead mb-3"><span>Spending my last £2000 on career coaching after years of feeling unfulfilled and unchallenged at work, I was left with the gut-wrenching belief that finding a motivating, enjoyable career was out of reach for me.</span></p>
-                        <p class="lead mb-3"><span>Down £2000, anxious, and with nothing left to lose I enrolled on a computer science course (CS50 from HarvardX). Working on the second problem set, I remember feeling alive and energised as I tried to solve an equation for printing a series of hash symbols in C.</span>
+                    <div class="text-block text-justify">
+                        <p class="lead"><span>Spending my last £2000 on career coaching after years of feeling unfulfilled and unchallenged at work, I was left with the gut-wrenching belief that finding a motivating, enjoyable career was out of reach for me.</span></p>
+                        <p class="lead"><span>Down £2000 and frustrated with my situation, I decided to take a risk and enrolled on a computer science course (<a href="https://cs50.harvard.edu/x">CS50x from Harvard</a>). Working on the second problem set, I remember feeling alive and energised as I tried to solve an equation for printing a series of hash symbols in C.</span>
                             <span>I hadn’t felt this feeling of satisfaction and accomplishment for a long time and it was in stark contrast to how I felt about my job.</span></p>
-                        <p class="lead mb-3"><span>Since then, over the past one and a half years I have been learning different aspects of software development, implementing them in projects whilst working as a teacher/tutor.</span>
+                        <p class="lead"><span>Since then, over the past one and a half years I have been learning different aspects of software development, implementing them in projects whilst working as a teacher/tutor.</span>
                             <span>Throughout this process, I have been dealing with self-doubt and frustration but this has been outweighed by the reward and joy from persevering through.</span></p>
-                        <p class="lead mb-3"><span>Going through this process, as challenging as it was, has evolved me, and I am confident in my abilities to learn, adapt and use my skills to benefit others, in ways that are empowering and exciting for me.</span>
+                        <p class="lead"><span>Going through this process, as challenging as it was, has evolved me, and I am confident in my abilities to learn, adapt and use my skills to benefit others, in ways that are empowering and exciting for me.</span>
                             <span>I am sure this makes me a strong, positive contributor to any team that I am on.</span></p>
                     </div>
                 </div>
@@ -92,7 +92,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <img src="assets/img/temp%20pic%20of%20meee.jpg">
+                    <img class="tariq-image" src="assets/img/portraitpic.jpg">
                 </div>
             </div>
         </div>
@@ -100,12 +100,13 @@
             <div class="row">
                 <div class="col">
                     <h2>Personal Values</h2>
-                    <div class="text-block px-5 text-justify">
-                        <p class="lead mb-3"><span>Coding for me is the art of Googling a query 10 different ways in 20 tabs!</span></p>
-                        <p class="lead mb-3"><span>I flourish in independent environments built on trust. Accountable, respectful, and reliable – I firmly believe the way you treat others reflects on yourself.</span>
+                    <div class="text-block text-justify">
+                        <p class="lead"><span>Coding, for me, is the art of Googling a query 10 different ways in 20 tabs!</span></p>
+                        <p class="lead"><span>I flourish in independent environments built on trust. Accountable, respectful, and reliable – I firmly believe the way you treat others reflects on yourself.</span></p>
+                        <p class="lead">
                             <span>Energised by tasks involving planning, co-ordination and strong problem-solving aspects.</span>
-                            <span>Simplifying complex concepts is rewarding, helping clarify my understanding and has made me more willing to challenge my existing ideas and beliefs.</span></p>
-                        <p class="lead mb-3">
+                            <span>Communicating complex concepts is rewarding, helping clarify my understanding whilst challenging me with different viewpoints.</span></p>
+                        <p class="lead">
                             <span>Given my education and employment background, I am curious about the intersection of technology with areas such as medicine, education, mental health, and philosophy.</span>
                             <span>Looking for opportunities where growth is prioritised and mistakes are treated as learning opportunities.</span></p>
                         </div>
@@ -113,14 +114,15 @@
             </div>
         </div>
     </section>
-    <section id="experience" class="content-section">
-        <div class="container-fluid text-center">
+    <section id="experience" class="content-section bg-light">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
                     <h1>Experience</h1>
                     <p class="lead">
                         <span> I believe my teaching career and work outside of software development makes me a strong candidate.</span>
-                        <span> Teaching has given me time to practice difficult concepts etc.</span>
+                        <span> Firstly, because pursuing software engineering was an active process that I am confident in my decision to pursue software development as it aligns well with my strengths. </span>
+                        <span>And secondly, participating in a wide variety of roles has afforded me non-conventional experiences, offering different ways of thinking.</span>
                     </p>
                 </div>
             </div>
@@ -128,44 +130,22 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h2> Language/Framework Experience </h2>
+                    <h2> Languages and Frameworks </h2>
                 </div>
             </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/iconfinder_postgresql_4691328.png"><p><span>Postgresql</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/sql.png"><p><span>SQL</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/sass.png"><p><span>Sass</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/c-2975-logo-png-transparent.png"><p><span>C</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/bootstrap.png"><p><span>Bootstrap</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/python.png"><p><span>Python</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/css-logo-png-css-logo-black-and-white.png"><p><span>CSS</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/flask-logo.png"><p><span>Flask</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/html.png"><p><span>HTML</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/iconfinder_Git_4923052.png"><p><span>Git</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/iconfinder_JQuery_logo_282806.png"><p><span>jQuery</span></p></div>
-            </div>
-            <div class="row">
-                <div class="col"><img class="logo" src="assets/img/javascript.png"><p><span>JavaScript</span></p></div>
+            <div class="row align-items-end">
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/python.png"><p><span>Python</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/javascript.png"><p><span>JavaScript</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/c-2975-logo-png-transparent.png"><p><span>C</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/SQLite370.png"><p><span>SQLite</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/iconfinder_postgresql_4691328.png"><p><span>Postgresql</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/html.png"><p><span>HTML</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/css-logo-png-css-logo-black-and-white.png"><p><span>CSS</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/sass.png"><p><span>Sass</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/bootstrap.png"><p><span>Bootstrap</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/flask-logo.png"><p><span>Flask</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/iconfinder_Git_4923052.png"><p><span>Git</span></p></div>
+                <div class="col-6 col-sm-4 col-lg-2"><img class="logo" src="assets/img/iconfinder_JQuery_logo_282806.png"><p><span>jQuery</span></p></div>
             </div>
         </div>
         <div class="container-fluid text-center">
@@ -173,53 +153,53 @@
                 <div class="col">
                     <h2>Non-Technical Skills</h2>
                     <ul class="list-group-flush">
-                        <li class="list-group-item">Placeholder <i class="fa fa-graduation-cap"></i></li>
-                        <li class="list-group-item">Placeholder <i class="fa fa-graduation-cap"></i></li>
-                        <li class="list-group-item">Placeholder <i class="fa fa-graduation-cap"></i></li>
-                        <li class="list-group-item"><i class="fa fa-handshake-o"></i>Placeholder </li>
+                        <li class="list-group-item">Courage - taking action in spite of fear<i class="fa fa-graduation-cap"></i></li>
+                        <li class="list-group-item">Learning - understanding and absorbing new information with an open mind <i class="fa fa-graduation-cap"></i></li>
+                        <li class="list-group-item">Communication - clearly presenting thoughts and ideas for others to understand <i class="fa fa-graduation-cap"></i></li>
+                        <li class="list-group-item"><i class="fa fa-handshake-o"></i>Creativity - linking novel ideas and concepts that may seem different to solve problems </li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
-    <section id="portfolio" class="content-section">
+    <section id="portfolio" class="content-section bg-light">
         <div class="container-fluid">
             <div class="content-section-heading text-center">
-                <h2 class="my-5 text-primary">Recent Projects</h2>
+                <h1>Recent Projects</h1>
             </div>
             <div class="row no-gutters">
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
+                    <a class="portfolio-item js-scroll-trigger" href="#project-books">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>books</h2>
+                                <h2 class="no-padding">books</h2>
                                 <p class="mb-0">A book rating website based on a Flask backend, using the Goodreads API and storing user reviews in a SQL database</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-1.jpg"></a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
+                    <a class="portfolio-item js-scroll-trigger" href="#project-flack">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>flack</h2>
+                                <h2 class="no-padding">flack</h2>
                                 <p class="mb-0">Instant messaging web app using Flask, Javascript and SocketIO</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-2.jpg"></a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
+                    <a class="portfolio-item js-scroll-trigger" href="#project-cs50finance">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>CS50 Finance</h2>
+                                <h2 class="no-padding">CS50 Finance</h2>
                                 <p class="mb-0">Web app allowing users to buy, sell and quote stocks from an online stock exchange</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-3.jpg"></a>
                 </div>
                 <div class="col-lg-6">
-                    <a class="portfolio-item" href="#">
+                    <a class="portfolio-item js-scroll-trigger" href="#project-upgradedfinance">
                         <div class="caption">
                             <div class="caption-content">
-                                <h2>finance upgraded</h2>
+                                <h2 class="no-padding">finance upgraded</h2>
                                 <p class="mb-0">An improved version of CS50 Finance featuring a more user friendly experience with typeahead, jQuery and client-side validation</p>
                             </div>
                         </div><img class="img-fluid" src="assets/img/portfolio-4.jpg"></a>
@@ -228,11 +208,11 @@
         </div>
     </section>
     <section id="project-books" class="project content-section bg-light">
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
-                    <h2>Books</h2>
-                    <p class="lead mb-5"><span>A book rating site using Flask and the Goodreads API. Users can store reviews and ratings in a SQL database.</span></p>
+                    <h1>Books</h1>
+                    <p class="lead"><span>A book rating site using Flask and the Goodreads API. Users can store reviews and ratings in a SQL database.</span></p>
                 </div>
             </div>
             <div class="row">
@@ -244,9 +224,11 @@
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3>Search</h3>
+                    <h2>Search</h2>
                 </div>
             </div>
             <div class="row">
@@ -259,7 +241,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h3>Results</h3>
+                    <h2>Results</h2>
                 </div>
             </div>
             <div class="row">
@@ -277,7 +259,7 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <h3>Dynamic Routes</h3>
+                    <h2>Dynamic Routes</h2>
                 </div>
             </div>
             <div class="row">
@@ -288,27 +270,28 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="project-books-app" class="project app bg-light">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col"><button class="btn btn-primary" type="button" onclick="location.href='https\:\/\/tariqs-book-reviews.herokuapp.com'">Go to the Books App!</button>
-                    <p><span>The app may take some time as the server initializes</span></p>
+        <div id="project-books-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary app-link" type="button" onclick="location.href='https\:\/\/tariqs-book-reviews.herokuapp.com'">Go to the Books App!</button>
+                        <p><span>The app may take some time as the server initializes</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="project-flack" class="project content-section bg-light">
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
                     <h1>Flack</h1>
-                    <p class="lead mb-5"><span>Instant messaging web app that allows users to send and receive messages without refreshing the page.</span></p>
+                    <p class="lead"><span>Instant messaging web app that allows users to send and receive messages without refreshing the page.</span></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h3>Features</h3>
+                    <h4>Features</h4>
                     <ul>
                         <li>Create channels with independent messages</li>
                         <li>Persistent display names without login</li>
@@ -320,7 +303,7 @@
             <br>
             <div class="row">
                 <div class="col">
-                    <h3>Design Considerations</h3>
+                    <h2>Design Considerations</h2>
                     <ul>
                         <li>Data structure used to store messages</li>
                         <li>Notifying users when a message was deleted</li>
@@ -332,7 +315,7 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3> Implementing this project </h3>
+                    <h2> Implementing this project </h2>
                 </div>
             </div>
             <div class="row">
@@ -355,13 +338,13 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3> Instant Messaging & Channels </h3>
+                    <h2> Instant Messaging & Channels </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <figure class="figure"><img class="figure-img d-xl-flex justify-content-xl-center" src="assets/img/flack%20channel2.gif">
-                        <p class="image-caption">Channel creation and message separation/retrieval</figcaption>
+                        <p class="image-caption">Channel creation and message separation/retrieval</p>
                     </figure>
                 </div>
             </div>
@@ -369,13 +352,13 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3> Message Deletion </h3>
+                    <h2> Message Deletion </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <figure class="figure"><img class="figure-img" src="assets/img/flack%20delete%20example%20final.gif">
-                        <p class="image-caption">Instant message update as well deleting messages</figcaption>
+                        <p class="image-caption">Instant message update as well deleting messages</p>
                     </figure>
                 </div>
             </div>
@@ -383,43 +366,43 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3> Message Delete Timer </h3>
+                    <h2> Message Delete Timer </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
                     <figure class="figure"><img class="figure-img" src="assets/img/Flack%20delete%20timer2.gif">
-                        <p class="image-caption">I used Promises in Javascript to implement this</figcaption>
+                        <p class="image-caption">I used Promises in Javascript to implement this</p>
                     </figure>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="project-flack-app" class="project app bg-light">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-primary" type="button"onclick="location.href='https\:\/\/flack-messaging-app.herokuapp.com'">Go to the Flack App!</button>
+        <div id="project-flack-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary app-link" type="button"onclick="location.href='https\:\/\/flack-messaging-app.herokuapp.com'">Go to the Flack App!</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">    
-                <div class="col">
-                    <p><span>The app may take some time to load as the server initializes</span></p>
+                <div class="row">    
+                    <div class="col">
+                        <p><span>The app may take some time to load as the server initializes</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="project-cs50finance" class="project content-section bg-light">
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
                     <h1>CS50 Finance</h1>
-                    <p class="lead mb-5"><span>Web app where users can buy, sell and retrieve stock prices from an online stock exchange</span></p>
+                    <p class="lead"><span>Web app where users can buy, sell and retrieve stock prices from an online stock exchange</span></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h2>Features</h2>
+                    <h4>Features</h4>
                     <ul>
                         <li>Users can register and login</li>
                         <li>Data stored in a SQL database</li>
@@ -432,81 +415,90 @@
         <div class="container-fluid text-center">    
             <div class="row">
                 <div class="col">
-                    <h3> Quoting Stocks </h3>
+                    <h2> Quoting Stocks </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <figure class="figure"><img class="figure-img" src="assets/img/Screenshot_2020-08-12%20C$50%20Finance%20Quote.png">
+                    <figure class="figure">
+                        <h4>Quote Input Screen</h4>
+                        <img class="figure-img" src="assets/img/Screenshot_2020-08-12%20C$50%20Finance%20Quote.png">
+                        <h4>Quote Result</h4>
                         <img class="figure-img" src="assets/img/Screenshot_2020-08-12%20C$50%20Finance%20Quoted.png">
-                        <p class="image-caption">Users provide stock symbol and are returned with the cost of a share</figcaption>
+                        <p class="image-caption">Users provide stock symbol and are returned with the cost of a share</p>
                     </figure>
                 </div>
             </div>
         </div>
-    </section>
-    <section id="project-cs50finance-app" class="project app bg-light">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col">
-                    <button class="btn btn-primary" type="button" onclick="location.href='https\:\/\/tariqs-sharebuyer.herokuapp.com/login'">Go to the CS50 Finance App!</button>
+        <div id="project-cs50finance-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary app-link" type="button" onclick="location.href='https\:\/\/tariqs-sharebuyer.herokuapp.com/login'">Go to the CS50 Finance App!</button>
+                    </div>
                 </div>
-            </div>
-            <div class="row">    
-                <div class="col">
-                    <p><span>The app may take some time to load as the server initializes</span></p>
-                    <p><span>Create your own account or use:</span></p> 
-                    <p><span>Username: <b>testuser</b></span><br>
-                    <span>Password: <b>testuser</b></span></p>
-                    <p><span>For an improved version of this app, have a look here</span></p>
+                <div class="row">    
+                    <div class="col">
+                        <p><span>The app may take some time to load as the server initializes</span></p>
+                        <p><span>Create your own account or use:</span></p> 
+                        <p><span>Username: <b>testuser</b></span><br>
+                        <span>Password: <b>testuser</b></span></p>
+                        <p><span>Keep scrolling to see how this project evolved</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <section id="project-upgradedfinance" class="project content-section bg-light">
-        <div class="container-fluid text-center">
+        <div class="container-fluid text-center section-start">
             <div class="row">
                 <div class="col">
                     <h1>Upgraded Finance</h1>
-                    <p class="lead mb-5"><span><br>Like CS50 Finance, with a more user friendly design.<br></span></p>
+                    <p class="lead"><span><br>Like CS50 Finance, with a more user friendly design.<br></span></p>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h2>Rationale for project</h2>
-                    <p><span>From a users standpoint the original app  was frustrating to use, especially with errors. <br>
-                        I started with typeahead functionality and later added more UI/UX improvements.</span></p>
+                    <h4>Rationale for project</h4>
+                    <p><span>From a users standpoint the original app  was frustrating to use, especially if the user made an error.</span></p>
+                    <p><span>I started with implementing typeahead and later added more UI/UX improvements.</span></p>
                 </div>
             </div>
         </div>
         <div class="container-fluid text-center">
-                <div class="row">
-                    <div class="col">
-                        <h3> Index Page & Typeahead </h3>
-                    </div>
-                </div>
             <div class="row">
                 <div class="col">
-                    <div id="image-slider-container" class="beer-slider">
-                        <img src="assets/img/old-index2.png">
-                        <div class="beer-reveal">    
-                            <img src="assets/img/new-index2.png">
+                    <h2> Index Page & Typeahead </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4> Index page evolution </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"> 
+                    <figure class="figure">
+                        <div class="image-container-index-page text-center">
+                            <div id="image-slider-container" class="beer-slider">
+                                <img src="assets/img/old-index2.png">
+                                <div class="beer-reveal">    
+                                    <img src="assets/img/new-index2.png">
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                        <p class="image-caption">Comparison of the old index page vs the new index page</p>
+                    </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <p class="image-caption"><span>Comparison of the old index page vs the new index page</span></p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+                    <h4> Typeahead and Input Event Handling </h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/new-typeahead1.1.gif">
                         <p class="image-caption">Searching for stocks is easier thanks to typeahead.<br>
                             Buying shares or cancelling transactions is now possible.<br>
                             In the previous app, the user would have had to type the correct symbol and the right
-                            number of shares.</figcaption>
+                            number of shares.</p>
                     </figure>
                 </div>
             </div>
@@ -514,29 +506,35 @@
         <div class="container-fluid text-center">
             <div class="row">
                 <div class="col">
-                    <h3> Register & Login Logic </h3>
+                    <h2> Register & Login Logic </h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <div class="image">
+                    <h4> Validation Logic Flowchart </h4>
+                    <figure class="figure text-center">
                         <img class="figure-img large-screen register" src="assets/img/finance%20logic.png">
                         <img class="figure-img small-screen register" src="assets/img/finance%20logic%20small1.png">
                         <img class="figure-img small-screen register" src="assets/img/finance%20logic%20small2.png">
                         <p class="image-caption">Comparison of login/register logic</p>
-                    </div>
+                    </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>Old Register Example</h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/old%20%20register%20error2.gif">
-                        <p class="image-caption">Old version of finance: errors redirect to an error page which the user must navigate away from</figcaption>
-                        <div class="col">
-                            <figure class="figure"><img class="figure-img" src="assets/img/new%20login.gif">
-                                <p class="image-caption">New version: users are given real-time feedback, there is no need to navigate back</figcaption>
+                        <p class="image-caption">Old version of finance: errors redirect to an error page which the user must navigate away from</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>New Register Example</h4>
+                    <figure class="figure"><img class="figure-img" src="assets/img/new%20login.gif">
+                                <p class="image-caption">New version: users are given real-time feedback, there is no need to navigate back</p>
                             </figure>
                         </div>
-                    </figure>
                 </div>
             </div>
         </div>
@@ -548,49 +546,55 @@
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>Old Buying Example</h4>
                     <img class="figure-img" src="assets/img/oldfinance_buy.gif">
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>Old Selling Example</h4>
                     <figure class="figure">
                         <img class="figure-img" src="assets/img/oldfinance_sell.gif">
-                        <p class="image-caption">Old method of buying and selling shares - calculations and checks all done on server side</figcaption>
+                        <p class="image-caption">Old method of buying and selling shares - calculations and checks all done on server side</p>
                     </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>New Buying and Selling Calculation Functionality</h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/new-eventhandling_and_calcs.gif">
                         <p class="image-caption">Calculations done client-side with the user receiving immediate feedback - value of shares are updated and cash balance is changed. <br>When there isn't enough cash available, the maximum amount of shares are calculated and
-                            shown. <br>In addition, the buy button is disabled if there is not enough cash available.</figcaption>
+                            shown. <br>In addition, the buy button is disabled if there is not enough cash available.</p>
                     </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>Confirming Transactions with AJAX</h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/new-buying.gif">
                         <p class="image-caption">Transactions are not confirmed until the user decides to confirm them with the button.<br>This required an overhaul of the calculation logic and was a challenging task.<br>Confirming the transaction data doesn't require a page
-                            reload as it did before.</figcaption>
+                            reload as it did before.</p>
                     </figure>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4>Using Event Handlers to Guide User Experience</h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/new-eventhandling_inputs2.gif">
-                        <p class="image-caption">Using event handlers to constrain what the user could do was another UI change.<br>If the user decides to buy, the sell input is disabled and vice versa.</figcaption>
+                        <p class="image-caption">Using event handlers to constrain what the user could do was another UI change.<br>If the user decides to buy, the sell input is disabled and vice versa.</p>
                     </figure>
                 </div>
             </div>
         </div>
         <div class="container-fluid text-center">
             <div class="row">
-                <div class="col"><h3> Backend & Other Improvements </h3></div>
+                <div class="col"><h2> Backend & Other Improvements </h2></div>
             </div>
             <div class="row">
                 <div class="col">
+                    <h4> Handling Errors with Typeahead Requests </h4>
                     <figure class="figure"><img class="figure-img" src="assets/img/new-typeahead2.2.gif">
-                        <p class="image-caption">Other changes included avoiding duplicate entries, managing AJAX responses where an API call failed.</figcaption>
+                        <p class="image-caption">Other changes included avoiding duplicate entries, managing AJAX responses where an API call failed.</p>
                     </figure>
                 </div>
             </div>
@@ -610,22 +614,33 @@
                 </div>
             </div>
         </div>
-    </section>
-    <section id="project-upgradedfinance-app" class="project app bg-light">
-        <div class="container-fluid text-center">
-            <div class="row">
-                <div class="col">
-                    <button id="upgraded-finance" class="btn btn-primary" type="button" onclick="location.href='https\:\/\/upgraded-finance.herokuapp.com/login'">Go to the Upgraded Finance App!</button>
-                    <p><span>The app may take some time to load as the server initializes</span></p>
-                    <p><span>Create your own account or use:</span></p> 
-                    <p><span>Username: <b>testuser</b></span><br>
-                    <span>Password: <b>testuser</b></span></p>
+        <div id="project-upgradedfinance-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button id="upgraded-finance" class="btn btn-primary app-link" type="button" onclick="location.href='https\:\/\/upgraded-finance.herokuapp.com/login'">Go to the Upgraded Finance App!</button>
+                        <p><span>The app may take some time to load as the server initializes</span></p>
+                        <p><span>Create your own account or use:</span></p> 
+                        <p><span>Username: <b>testuser</b></span><br>
+                        <span>Password: <b>testuser</b></span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <footer id="contact" class="footer text-center">
+    <section id="contact" class="content-section">
+    <div class="container-fluid text-center">
+        <div class="row">
+            <div class="col">
+                <p class="lead">
+                    <span>Like what you see? Send me an email or connect with me on LinkedIn, I won't bite!</span>
+                    <span>Don't like what you see? Send me an email or connect with me on LinkedIn and tell me what you don't like, I might bite this time.</span>
+                </p>
+            </div>
+        </div>
+    </div>
+    </section>
+    <footer class="footer text-center bg-light">
         <div class="container-fluid">
             <ul class="list-inline mb-5">
                 <li class="list-inline-item">&nbsp;<a class="text-white social-link rounded-circle" href="#"><i class="icon-social-linkedin"></i></a></li>
