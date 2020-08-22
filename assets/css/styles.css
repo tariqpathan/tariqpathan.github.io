@@ -12,6 +12,14 @@ a.nav-link.active.js-scroll-trigger {
     background-color: #1d809f;
     color: #fff !important;
 }
+
+a.contrast, a.contrast:link:visited {
+    color: #fff;
+    text-decoration: underline;
+}
+a.contrast:hover {
+    text-decoration: none;
+}
 /* images */
 img.register {
     border-radius: 80px;
@@ -78,7 +86,7 @@ h4 {
     margin: 2rem 0 1.5rem 0;
 }
 
-p:not(p.mb-0) {
+p:not(p.mb-0):not(p.ignore) {
     margin: 1.25rem 0 1rem 0;
 }
 
@@ -95,22 +103,99 @@ ul {
 
 ul > li:not(li.nav-item) {
     margin: 1rem 0;
-    transition-property: all;
-    transition-duration: 500ms;
-}
-ul.highlight > li:hover {
-    background: #1341aa;
-    color: #fff;
 }
 
-@keyframes list-animation {
-    0% {}
-    50% { background-color: #1341aa; color: white;}
-    100% {}
+/* div-list-group stuff */
+img.div-list-group {
+    width: 100px;
+    box-shadow: none;
+    margin: 1rem 0.5rem 1rem 0;
+}
+  
+div.container-fluid.div-list-group {
+    max-width: 700px;
+}
+  
+div.col.div-list-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 2rem 0;
+    align-items: center;
+}
+div.row.div-list-group:nth-of-type(2n) > div.col {
+    flex-direction: row-reverse;
+}
+  
+div.row.div-list-group:nth-of-type(2n) > div.col > div.image-container > img {
+    margin: 1rem 0 1rem 0.5rem;
+}
+  
+div.row.div-list-group:nth-of-type(2n) > div.col > div.text-container > * {
+    text-align: right;
+}
+  
+div.div-list-group.text-container {
+    max-width: 75%;
+    padding-left: 0.5rem;
+    padding-right:0.5rem;
+}
+  
+div.text-container.div-list-group > p {
+    margin: 0;
 }
 
-li.list-group-item {
-    border: none;
+/* flack infographic styling */
+div.infographic-main-container {
+    padding: 1rem 0 5rem 0;
+}
+div.infographic.outer {
+    display: flex;
+}
+div.infographic.outer.left {
+    justify-content: flex-start;
+}
+div.infographic.outer.right {
+    justify-content: flex-end;
+}
+div.infographic.inner {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+div.infographic.text-container {
+    width: 100%;
+    max-width: 600px;
+    padding: 0 0.5rem;
+    margin-bottom: 0.25rem;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+
+div.infographic.text-container > p {
+    text-align: center;
+    margin: 0.5rem 0;
+    font-weight: 400;
+    color: white;
+    font-size: 1.2rem;
+}
+
+div.infographic.outer:nth-of-type(3n+0) > div.inner > div.text-container {
+    background-color: tomato;
+}
+div.infographic.outer:nth-of-type(3n-2) > div.inner > div.text-container {
+    background-color: blueviolet;
+}
+div.infographic.outer:nth-of-type(3n-1) > div.inner > div.text-container {
+    background-color: dodgerblue;
+}
+
+i.fa-caret-down {
+    color: red;
+    text-shadow: 0 0 10px;
 }
 
 /* media queries */
