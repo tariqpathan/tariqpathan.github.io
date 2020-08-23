@@ -145,7 +145,7 @@ ul.project-list {
 img.div-list-group {
     width: 100px;
     box-shadow: none;
-    margin: 1rem 0.5rem 1rem 0;
+    margin: 1rem 0;
 }
 
 div.div-list-container {
@@ -169,12 +169,12 @@ div.row.div-list-group:nth-of-type(2n) > div.col {
     flex-direction: row-reverse;
 }
   
-div.row.div-list-group:nth-of-type(2n) > div.col > div.image-container > img {
-    margin: 1rem 0 1rem 0.5rem;
-}
-  
 div.row.div-list-group:nth-of-type(2n) > div.col > div.text-container > * {
     text-align: right;
+}
+
+div.row.div-list-group:nth-of-type(2n+1) > div.col > div.text-container > * {
+    text-align: left;
 }
   
 div.div-list-group.text-container {
