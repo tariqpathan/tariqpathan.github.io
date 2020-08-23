@@ -1,5 +1,7 @@
 $(document).ready(function() {
   "use strict"; // Start of use strict
+  // Creates an image slider
+  var slider = new BeerSlider(document.getElementById('image-slider-container'));
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {

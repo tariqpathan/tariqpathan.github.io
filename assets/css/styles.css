@@ -5,11 +5,12 @@
 }
 
 #mainNav {
-    background-color: #ecb807;
+    background-color: #f3b900;
 }
 
 a.nav-link.active.js-scroll-trigger {
-    background-color: #1d809f;
+    background-color: #006875;
+    /* background-color: #1d809f; */
     color: #fff !important;
 }
 
@@ -20,6 +21,34 @@ a.contrast, a.contrast:link:visited {
 a.contrast:hover {
     text-decoration: none;
 }
+
+/* social media footer */
+div.social-col {
+    display: flex;
+    justify-content: center;
+}
+
+div.social-col > a {
+    margin: 0 0.5rem;
+}
+
+div.social-col > a:hover {
+    text-decoration: none;
+}
+
+div.social-link > i.fa-2x {
+    font-size: 1.5em;
+}
+
+p.social-text-link {
+    font-size: 1rem;
+    margin: 0;
+}
+
+p.footer.text-muted {
+    padding-top: 8rem;
+}
+
 /* images */
 img.register {
     border-radius: 80px;
@@ -35,20 +64,32 @@ img.tariq-image {
     margin: 3rem 0;
 }
 
-img, div.image-container-index-page {
+img.tariq-image, .project-img, img.logo {
     box-shadow: 0 0 20px gray;
     display: inline-block;
 }
 
+/* aboutme quote */
+div.blockquote-decoration {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.blockquote-quote {
+    margin: 0 0.5rem;
+}
+
 /* section and div spacing */
 section.content-section > div.section-start {
-    background-color: rgb(27, 33, 124);
+    background-color: #0e274f;
     color: white;
     border-radius: 5px;
     padding-bottom: 3rem;
 }
-
-div.container-fluid:not(header > div.container-fluid) {
+/* :not(header > div.container-fluid) */
+div.container-fluid:not(div.container-fluid.my-auto) {
     padding: 4rem 0;
 }
 
@@ -58,7 +99,6 @@ section.content-section {
 
 div.project.app {
     margin: 1.5rem 0;
-    /* padding-top: 1.5rem; */
 }
 
 button.app-link {
@@ -75,7 +115,7 @@ h2 {
 }
 
 h2.no-padding {
-    margin: 0 0 0.5rem 0;
+    margin: 0.5rem 0;
 }
 
 h3 {
@@ -96,13 +136,9 @@ p.image-caption {
     max-width: 80vw;
 }
 /* list item styles */
-ul {
+ul.project-list {
     list-style-type: none;
     padding-left: 0;
-}
-
-ul > li:not(li.nav-item) {
-    margin: 1rem 0;
 }
 
 /* div-list-group stuff */
@@ -111,7 +147,13 @@ img.div-list-group {
     box-shadow: none;
     margin: 1rem 0.5rem 1rem 0;
 }
-  
+
+div.div-list-container {
+    background-color: #fff6d9;
+    border-radius: 5px;
+    margin-top: 4rem;
+}
+
 div.container-fluid.div-list-group {
     max-width: 700px;
 }
@@ -172,7 +214,7 @@ div.infographic.text-container {
     padding: 0 0.5rem;
     margin-bottom: 0.25rem;
     border-radius: 20px;
-    box-shadow: 0 0 10px;
+    box-shadow: 0 0 10px gray;
 }
 
 div.infographic.text-container > p {
@@ -183,18 +225,15 @@ div.infographic.text-container > p {
     font-size: 1.2rem;
 }
 
-div.infographic.outer:nth-of-type(3n+0) > div.inner > div.text-container {
-    background-color: tomato;
+div.infographic.outer:nth-of-type(2n+0) > div.inner > div.text-container {
+    background-color: #1800f5;
 }
-div.infographic.outer:nth-of-type(3n-2) > div.inner > div.text-container {
-    background-color: blueviolet;
-}
-div.infographic.outer:nth-of-type(3n-1) > div.inner > div.text-container {
-    background-color: dodgerblue;
+div.infographic.outer:nth-of-type(2n-1) > div.inner > div.text-container {
+    background-color: #008bf5;
 }
 
 i.fa-caret-down {
-    color: red;
+    color: #b5b5b5;
     text-shadow: 0 0 10px;
 }
 
@@ -212,7 +251,7 @@ i.fa-caret-down {
         background: #1341aa;
         color: #fff;
     }
-    img, div.image-container-index-page {
+    .project-img {
         max-width: 98%;
     }
     
@@ -238,8 +277,14 @@ i.fa-caret-down {
     img.tariq-image {
         width: 30%;
     }
-    img, div.image-container-index-page {
+    .project-img {
         max-width: 95%;
+    }
+    div.text-block > p.lead {
+        font-weight: 400;
+    }
+    ul.project-list > li {
+        font-size: 1.1rem;
     }
 }
 

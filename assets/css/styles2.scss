@@ -1,9 +1,0 @@
-ul.animate.start > li {
-    animation: list-animation 1000ms;
-
-    @for $i from 1 to 10 {
-        &:nth-child(#{$i}) {
-            animation-delay: 400ms * $i;
-        }
-    }
-}
