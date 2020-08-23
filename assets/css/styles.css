@@ -51,7 +51,7 @@ p.footer.text-muted {
 
 /* images */
 img.register {
-    border-radius: 80px;
+    /* border-radius: 80px; */
 }
 
 img.logo {
@@ -60,7 +60,8 @@ img.logo {
 
 img.tariq-image {
     border-radius: 50%;
-    width: 200px;
+    width: 170px;
+    max-width: 250px;
     margin: 3rem 0;
 }
 
@@ -88,7 +89,6 @@ section.content-section > div.section-start {
     border-radius: 5px;
     padding-bottom: 3rem;
 }
-/* :not(header > div.container-fluid) */
 div.container-fluid:not(div.container-fluid.my-auto) {
     padding: 4rem 0;
 }
@@ -190,6 +190,9 @@ div.text-container.div-list-group > p {
 /* flack infographic styling */
 div.infographic-main-container {
     padding: 1rem 0 5rem 0;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
 }
 div.infographic.outer {
     display: flex;
@@ -243,6 +246,7 @@ i.fa-caret-down {
 @media (max-width: 767px) {
     img.small-screen {
         display: inline-block;
+        border-radius: 17%;
     }
     img.large-screen {
         display: none;
@@ -270,6 +274,7 @@ i.fa-caret-down {
     }
     img.large-screen {
         display: inline-block;
+        border-radius: 6rem;
     }
     p.lead {
         padding: 0 3rem;
@@ -301,4 +306,11 @@ i.fa-caret-down {
         padding-top: 5px;
         padding-bottom: 5px;
     }
+}
+
+@media (min-width: 1200px) {
+    img.large-screen {
+        max-width: 1100px;
+    }    
+
 }
