@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tariq's Portfolio Site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <script src="assets/js/stylish-portfolio.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./experience.html">Experience</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item active" role="presentation" href="./books.html">Books</a>
+                            <a class="dropdown-item" role="presentation" href="./flack.html">Flack</a>
+                            <a class="dropdown-item" role="presentation" href="./cs50-finance.html">CS50 Finance</a>
+                            <a class="dropdown-item" role="presentation" href="./upgraded-finance.html">Upgraded Finance</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="project-books" class="project content-section bg-light">
+        <div class="container-fluid text-center section-start">
+            <div class="row">
+                <div class="col">
+                    <h1>Books</h1>
+                    <p class="lead"><span>A book rating site using Flask and the Goodreads API. Users can store reviews and ratings in a SQL database.</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Features</h4>
+                    <ul class="project-list">
+                        <li>Dynamically generated URL routes for over 5000 books</li>
+                        <li>Alternative routes for logged in users that allows ratings and reviews to be stored and retrieved</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h2>Search</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img class="figure-img project-img" src="assets/img/projects/books1.png">
+                        <p class="image-caption"><span>Users can search by book title, author, year of publication from a single input form</span></p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Results</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img class="figure-img project-img" src="assets/img/projects/books3.png">
+                        <p class="image-caption">
+                            <span>Search query returns upto 20 of the best matches</span>
+                            <br>
+                            <span>Results shown for the search term '1954' - some of the results have different years because 1954 is also in the ISBN for these books.
+                            This was deliberately chosen to allow users to search by incomplete ISBN values.</span>
+                        </p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h2>Dynamic Routes</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <figure class="figure">
+                        <img class="figure-img project-img" src="assets/img/projects/books2.png">
+                        <p class="image-caption"><span>An example of a dynamically generated page for book with previous comments or ratings displayed if the user has saved them on a previous visit.</span></p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="project-books-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button class="btn btn-primary app-link" type="button" onclick="location.href='https\:\/\/tariqs-book-reviews.herokuapp.com'">Go to the Books App!</button>
+                        <p><span>The app may take some time as the server initializes</span></p>
+                        <p><span>Create your own account or use:</span></p> 
+                        <p><span>Username: <b>testuser</b></span><br>
+                        <span>Password: <b>testuser</b></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <p><span>Questions? Connect with me!</span></p>
+                    <div class="social-col">    
+                        <a href="https://www.linkedin.com/in/tariqpathan">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-linkedin fa-2x"></i></div>
+                            <p class="ignore social-text-link">LinkedIn</p>
+                        </a>
+                        <a href="https://github.com/tariqpathan">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-github fa-2x"></i></div>
+                            <p class="ignore social-text-link">Github</p>
+                        </a>
+                        <a href="mailto:tariqpathan.se@gmail.co.uk">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-envelope fa-2x"></i></div>
+                            <p class="ignore social-text-link">Email</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+</body>
+</html>

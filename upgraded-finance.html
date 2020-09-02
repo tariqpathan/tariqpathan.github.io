@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tariq's Portfolio Site</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/BeerSlider.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="assets/js/BeerSlider.unmin.js"></script>
+
+    <script src="assets/js/stylish-portfolio.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body id="page-top">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">Home</a>
+            <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"
+                value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./about.html">About</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./experience.html">Experience</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-toggle nav-link active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">Projects</a>
+                        <div class="dropdown-menu" role="menu">
+                            <a class="dropdown-item" role="presentation" href="./books.html">Books</a>
+                            <a class="dropdown-item" role="presentation" href="./flack.html">Flack</a>
+                            <a class="dropdown-item" role="presentation" href="./cs50-finance.html">CS50 Finance</a>
+                            <a class="dropdown-item active" role="presentation" href="./upgraded-finance.html">Upgraded Finance</a>
+                        </div>
+                    </li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="./index.html/#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section id="project-upgradedfinance" class="project content-section bg-light">
+        <div class="container-fluid text-center section-start">
+            <div class="row">
+                <div class="col">
+                    <h1>Upgraded Finance</h1>
+                    <p class="lead"><span><br>Like CS50 Finance, with a more user friendly design.<br></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Rationale for project</h4>
+                    <p><span>From a users standpoint the original app  was frustrating to use, especially if the user made an error.</span></p>
+                    <p><span>I started with implementing typeahead and later added more UI/UX improvements.</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h2> Index Page & Typeahead </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4> Index page evolution </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col"> 
+                    <figure class="figure">
+                        <div class="slider-container project-img text-center">
+                            <div id="image-slider-container" class="beer-slider">
+                                <img src="assets/img/projects/old-index2.png">
+                                <div class="beer-reveal">    
+                                    <img src="assets/img/projects/new-index2.png">
+                                </div>
+                            </div>
+                        </div>
+                        <p class="image-caption">Comparison of the old index page vs the new index page</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4> Typeahead and Input Event Handling </h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-typeahead1.1.gif">
+                        <p class="image-caption">Searching for stocks is easier thanks to typeahead.<br>
+                            Buying shares or cancelling transactions is now possible.<br>
+                            In the previous app, the user would have had to type the correct symbol and the right
+                            number of shares.</p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h2> Register & Login Logic </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4> Validation Logic Flowchart </h4>
+                    <figure class="figure text-center">
+                        <img class="figure-img project-img large-screen register" src="assets/img/projects/finance-logic.png">
+                        <img class="figure-img project-img small-screen register" src="assets/img/projects/finance-logic-small1.png">
+                        <img class="figure-img project-img small-screen register" src="assets/img/projects/finance-logic-small2.png">
+                        <p class="image-caption">Comparison of login/register logic</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Old Register Example</h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/old-register-error.gif">
+                        <p class="image-caption">Old version of finance: errors redirect to an error page which the user must navigate away from</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>New Register Example</h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-login.gif">
+                                <p class="image-caption">New version: users are given real-time feedback, there is no need to navigate back</p>
+                            </figure>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <h3> Buying & Selling Improvements </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Old Buying Example</h4>
+                    <img class="figure-img project-img" src="assets/img/projects/old-buy.gif">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Old Selling Example</h4>
+                    <figure class="figure">
+                        <img class="figure-img project-img" src="assets/img/projects/old-sell.gif">
+                        <p class="image-caption">Old method of buying and selling shares - calculations and checks all done on server side</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>New Buying and Selling Calculation Functionality</h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-eventhandling-calcs.gif">
+                        <p class="image-caption">Calculations done client-side with the user receiving immediate feedback - value of shares are updated and cash balance is changed. <br>When there isn't enough cash available, the maximum amount of shares are calculated and
+                            shown. <br>In addition, the buy button is disabled if there is not enough cash available.</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Confirming Transactions with AJAX</h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-buying.gif">
+                        <p class="image-caption">Transactions are not confirmed until the user decides to confirm them with the button.<br>This required an overhaul of the calculation logic and was a challenging task.<br>Confirming the transaction data doesn't require a page
+                            reload as it did before.</p>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4>Using Event Handlers to Guide User Experience</h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-eventhandling-inputs2.gif">
+                        <p class="image-caption">Using event handlers to constrain what the user could do was another UI change.<br>If the user decides to buy, the sell input is disabled and vice versa.</p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col"><h2> Backend & Other Improvements </h2></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <h4> Handling Errors with Typeahead Requests </h4>
+                    <figure class="figure"><img class="figure-img project-img" src="assets/img/projects/new-typeahead2.gif">
+                        <p class="image-caption">Other changes included avoiding duplicate entries, managing AJAX responses where an API call failed.</p>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-center div-list-container colour">
+            <div class="row">
+                <div class="col">
+                    <h4>Other improvements include:</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container-fluid div-list-group finance-backend">
+                        
+                        <div class="row align-items-center div-list-group">
+                            <div class="col div-list-group">
+                                <div class="image-container div-list-group">
+                                    <img class="div-list-group" src="assets/img/list-images/modularising.png">
+                                </div>
+                                <div class="text-container div-list-group">
+                                    <h5>Modularising server functions</h5>
+                                    <p><span>Separating API, database and server logic</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center div-list-group">
+                            <div class="col div-list-group">
+                                <div class="image-container div-list-group">
+                                    <img class="div-list-group" src="assets/img/list-images/sqlorm.png">
+                                </div>
+                                <div class="text-container div-list-group">
+                                    <h5>SQLAlchemy ORM</h5>
+                                    <p><span>More readability than raw SQL strings</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center div-list-group">
+                            <div class="col div-list-group">
+                                <div class="image-container div-list-group">
+                                    <img class="div-list-group" src="assets/img/list-images/updating.png">
+                                </div>
+                                <div class="text-container div-list-group">
+                                    <h5>Stock Data Updating</h5>
+                                    <p><span>Separate module that updates a list of all purchasable stocks</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row align-items-center div-list-group">
+                            <div class="col div-list-group">
+                                <div class="image-container div-list-group">
+                                    <img class="div-list-group" src="assets/img/list-images/clientside-data.png">
+                                </div>
+                                <div class="text-container div-list-group">
+                                    <h5>Client-side data store</h5>
+                                    <p><span>Enabling real-time updates and calculations</span></p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="project-upgradedfinance-app" class="project app bg-light">
+            <div class="container-fluid text-center">
+                <div class="row">
+                    <div class="col">
+                        <button id="upgraded-finance" class="btn btn-primary app-link" type="button" onclick="location.href='https\:\/\/upgraded-finance.herokuapp.com/login'">Go to the Upgraded Finance App!</button>
+                        <p><span>The app may take some time to load as the server initializes</span></p>
+                        <p><span>Create your own account or use:</span></p> 
+                        <p><span>Username: <b>testuser</b></span><br>
+                        <span>Password: <b>testuser</b></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-center bg-light">
+        <div class="container-fluid text-center">
+            <div class="row">
+                <div class="col">
+                    <p><span>Questions? Connect with me!</span></p>
+                    <div class="social-col">    
+                        <a href="https://www.linkedin.com/in/tariqpathan">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-linkedin fa-2x"></i></div>
+                            <p class="ignore social-text-link">LinkedIn</p>
+                        </a>
+                        <a href="https://github.com/tariqpathan">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-github fa-2x"></i></div>
+                            <p class="ignore social-text-link">Github</p>
+                        </a>
+                        <a href="mailto:tariqpathan.se@gmail.co.uk">
+                            <div class="social-link rounded-circle"><i class="text-white fa fa-envelope fa-2x"></i></div>
+                            <p class="ignore social-text-link">Email</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="scroll-to-top rounded" href="#page-top"><i class="fa fa-angle-up"></i></a>
+    </footer>
+</body>
+</html>

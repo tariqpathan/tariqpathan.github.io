@@ -8,9 +8,8 @@
     background-color: #f3b900;
 }
 
-a.nav-link.active.js-scroll-trigger {
+a.nav-link.active {
     background-color: #006875;
-    /* background-color: #1d809f; */
     color: #fff !important;
 }
 
@@ -65,7 +64,7 @@ img.tariq-image {
     margin: 3rem 0;
 }
 
-img.tariq-image, .project-img, img.logo {
+img.tariq-image, .project-img {
     box-shadow: 0 0 20px gray;
     display: inline-block;
 }
@@ -88,13 +87,15 @@ section.content-section > div.section-start {
     color: white;
     border-radius: 5px;
     padding-bottom: 3rem;
+    padding-top: 4rem;
+    margin-bottom: 4rem;
 }
 div.container-fluid:not(div.container-fluid.my-auto) {
     padding: 4rem 0;
 }
 
 section.content-section {
-    padding: 0 0 18rem 0;
+    padding: 0 0 6rem 0;
 }
 
 div.project.app {
@@ -149,9 +150,8 @@ img.div-list-group {
 }
 
 div.div-list-container {
-    background-color: #fff6d9;
     border-radius: 5px;
-    margin-top: 4rem;
+    margin-top: 3rem;
 }
 
 div.container-fluid.div-list-group {
@@ -162,7 +162,7 @@ div.col.div-list-group {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
     align-items: center;
 }
 div.row.div-list-group:nth-of-type(2n) > div.col {
@@ -290,21 +290,6 @@ i.fa-caret-down {
     }
     ul.project-list > li {
         font-size: 1.1rem;
-    }
-}
-
-@media (min-width: 992px) {
-    #mainNav {
-        transition: background .3s ease-in-out, padding-top .3s ease-in-out, padding-bottom .3s ease-in-out;
-        background: transparent;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    #mainNav.navbar-shrink {
-        background: #f3b900;
-        padding-top: 5px;
-        padding-bottom: 5px;
     }
 }
 
