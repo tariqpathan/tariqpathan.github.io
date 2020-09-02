@@ -1,10 +1,7 @@
 $(document).ready(function() {
   "use strict"; // Start of use strict
-  // Creates an image slider
-  //var slider = new BeerSlider(document.getElementById('image-slider-container'));
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    console.log("js-scroll-trigger")
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     console.log(this.hostname);  
     var target = $(this.hash);
@@ -17,12 +14,6 @@ $(document).ready(function() {
       }
     }
   });
-
-  // Closes responsive menu when a scroll trigger link is clicked
-  // $('.js-scroll-trigger').not('#navbarDropdown').click(function() {
-  //   $('.navbar-collapse').collapse('hide');
-  //   setTimeout(() => $('div.dropdown-menu').removeClass("show"), 400);
-  // });
 
   // Scroll to top button appear
   $(document).scroll(function() {
