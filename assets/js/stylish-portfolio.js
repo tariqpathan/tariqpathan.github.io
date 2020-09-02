@@ -4,6 +4,7 @@ $(document).ready(function() {
   //var slider = new BeerSlider(document.getElementById('image-slider-container'));
 
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+    console.log("js-scroll-trigger")
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
     console.log(this.hostname);  
     var target = $(this.hash);
