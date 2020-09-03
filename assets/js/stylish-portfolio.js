@@ -15,6 +15,12 @@ $(document).ready(function() {
     }
   });
 
+  // Closes responsive menu when contact anchor link is clicked
+  $('a.nav-link[href="#contact"]').click(function() {
+    $('.navbar-collapse').collapse('hide');
+    setTimeout(() => $('div.dropdown-menu').removeClass("show"), 400);
+  });
+
   // Scroll to top button appear
   $(document).scroll(function() {
     var scrollDistance = $(this).scrollTop();

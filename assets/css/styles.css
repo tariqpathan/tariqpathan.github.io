@@ -90,6 +90,7 @@ section.content-section > div.section-start {
     padding-top: 4rem;
     margin-bottom: 4rem;
 }
+
 div.container-fluid:not(div.container-fluid.my-auto) {
     padding: 4rem 0;
 }
@@ -165,6 +166,7 @@ div.col.div-list-group {
     margin: 0 0 2rem 0;
     align-items: center;
 }
+
 div.row.div-list-group:nth-of-type(2n) > div.col {
     flex-direction: row-reverse;
 }
@@ -210,7 +212,6 @@ div.infographic.inner {
     align-items: center;
     margin: 0;
 }
-
 div.infographic.text-container {
     width: 100%;
     max-width: 600px;
@@ -219,7 +220,6 @@ div.infographic.text-container {
     border-radius: 20px;
     box-shadow: 0 0 10px gray;
 }
-
 div.infographic.text-container > p {
     text-align: center;
     margin: 0.5rem 0;
@@ -227,14 +227,12 @@ div.infographic.text-container > p {
     color: white;
     font-size: 1.2rem;
 }
-
 div.infographic.outer:nth-of-type(2n+0) > div.inner > div.text-container {
     background-color: #1800f5;
 }
 div.infographic.outer:nth-of-type(2n-1) > div.inner > div.text-container {
     background-color: #008bf5;
 }
-
 i.fa-caret-down {
     color: #b5b5b5;
     text-shadow: 0 0 10px;
@@ -258,11 +256,8 @@ i.fa-caret-down {
     .project-img {
         max-width: 98%;
     }
-    
     p.lead {
         padding: 0 1rem;
-    }
-    div.text-block > p.lead {
         text-align: left;
     }
 }
@@ -285,7 +280,7 @@ i.fa-caret-down {
     .project-img {
         max-width: 95%;
     }
-    div.text-block > p.lead {
+    p.lead {
         font-weight: 400;
     }
     ul.project-list > li {
@@ -297,5 +292,4 @@ i.fa-caret-down {
     img.large-screen {
         max-width: 1100px;
     }    
-
 }
