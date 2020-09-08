@@ -289,6 +289,11 @@ i.fa-caret-down {
     ul.project-list > li {
         font-size: 1.1rem;
     }
+    div.row.logo-container {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media (min-width: 1200px) {
