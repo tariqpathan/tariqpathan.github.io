@@ -263,7 +263,7 @@ i.fa-caret-down {
     }
     p.lead {
         padding: 0 1rem;
-        text-align: left;
+/*         text-align: left; rule causing text to be unaligned, need to test */
     }
 }
 
