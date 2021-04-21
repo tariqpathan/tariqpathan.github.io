@@ -128,7 +128,7 @@ h4 {
     margin: 2rem 0 1.5rem 0;
 }
 
-p:not(p.mb-0):not(p.ignore) {
+p:not(p.mb-0):not(p.ignore):not(p.lead) {
     margin: 1.25rem 0 1rem 0;
 }
 
